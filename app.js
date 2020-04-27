@@ -4,7 +4,7 @@ const fileUpload = require('express-fileupload');
 const bodyParser = require('body-parser');
 const fs = require('fs');
 
-const ipfs = new ipfsClient({host:'localhost', port:'5001', protocol:'http'});
+const ipfs = new ipfsClient({host:'ipfs.infura.io', port:'5001', protocol:'https'});
 const app = express();
 
 app.set('view engine','ejs');
